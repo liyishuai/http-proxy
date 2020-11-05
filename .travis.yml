@@ -8,9 +8,10 @@ dist: xenial
 # Caching so the next build will be fast too.
 cache:
  directories:
+  - $HOME/.cabal
   - $HOME/.stack
   - $TRAVIS_BUILD_DIR/.stack-work
-  - $HOME/.cabal
+  - $TRAVIS_BUILD_DIR/dist-newstyle
 
 before_install:
  # Download and unpack the stack executable
